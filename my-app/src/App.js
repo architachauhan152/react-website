@@ -16,6 +16,8 @@ import "./App.css";
 function App() {
   const [data, setData] = useState([]);
   const [value, setValue] = useState("");
+  const [sortValue, setSortValue] = useState("");
+
 
   const sortoptions=["name", "email", "phone", "address", "status"];
 
@@ -38,7 +40,20 @@ function App() {
         })
       .catch((err) => console.log(err));
   };
-  const handleReset = () => {};
+  const handleReset = () => {
+    loadUserData()
+  };
+  const handleSort= async (e)=>{
+    let value=e.target.value;
+    return await axios
+    .get(`http://localhost:5000/users?_sort=${value}&_order=asc`)
+    .then((res) => {setData(res.data);
+      })
+    .catch((err) => console.log(err));
+
+
+
+  }
 
   return (
     <MDBContainer>
@@ -112,7 +127,15 @@ function App() {
       <MDBRow>
         <MDBCol size="8">
           <h5>Sort By:</h5>
-          <select style={{width:"50%",borderRadius:"2px", height:"35px"}}></select>
+          <select style={{width:"50%",borderRadius:"2px", height:"35px"}} onChange={handleSort} value={sortValue}>
+            <option>Select value:</option>
+            {
+              sortoptions.map((item,index) =>(
+                <option value={item} key ={index}> {item}</option>
+
+              ))
+            }
+          </select>
         </MDBCol>
         <MDBCol size="4">
           <h5>Filter by status:</h5>
