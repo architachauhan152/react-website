@@ -1,0 +1,106 @@
+{
+    "users":[
+        {
+        "name":"Ritu",
+        "email":"ritu@test.com",
+        "phone":"8700096789",
+        "address":"UP",
+        "id":3,
+        "status":"Active"
+
+        },
+        {
+        "name":"Mridul",
+        "email":"mridul@test.com",
+        "phone":"0786896090",
+        "address":"India",
+        "id":4,
+        "status":"Active"
+
+        },
+        {
+        "name":"Bhardwaj",
+        "email":"bhardwaj@test.com",
+        "phone":"9000096789",
+        "address":"USA",
+        "id":2,
+        "status":"Inctive"
+
+        },
+        {
+        "name":"Mriduli",
+        "email":"Mriduli@test.com",
+        "phone":"8700096780",
+        "address":"UK",
+        "id":1,
+        "status":"Active"
+
+        },
+        {
+            "name":"Nikky",
+            "email":"nikky@test.com",
+            "phone":"8700096709",
+            "address":"Delhi",
+            "id":5,
+            "status":"Inactive"
+    
+        },
+        {
+            "name":"Kumkum",
+            "email":"kumkum@test.com",
+            "phone":"8700090089",
+            "address":"Agra",
+            "id":6,
+            "status":"Inactive"
+    
+            },
+            {
+            "name":"Koopa",
+            "email":"koopa@test.com",
+            "phone":"0786996090",
+            "address":"MP",
+            "id":7,
+            "status":"Active"
+    
+            },
+            {
+            "name":"Yash",
+            "email":"yash@test.com",
+            "phone":"9000091119",
+            "address":"England",
+            "id":8,
+            "status":"Inctive"
+    
+            },
+            {
+            "name":"Lakshmi",
+            "email":"lakshmi@test.com",
+            "phone":"8700055580",
+            "address":"Mumbai",
+            "id":9,
+            "status":"Active"
+    
+            },
+            {
+                "name":"Arapn",
+                "email":"arpan@test.com",
+                "phone":"9000096709",
+                "address":"Noida",
+                "id":10,
+                "status":"Inactive"
+        
+            },
+            {
+                "name":"Archana",
+                "email":"archana@test.com",
+                "phone":"9000090009",
+                "address":"Pune",
+                "id":11,
+                "status":"Active"
+        
+            }
+
+    
+
+    ]
+}
