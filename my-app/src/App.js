@@ -54,6 +54,17 @@ function App() {
 
 
   }
+  const handleFilter= async (value)=>{
+    return await axios
+    .get(`http://localhost:5000/users?status=${value}`)
+    .then((res) => {setData(res.data);
+      })
+    .catch((err) => console.log(err));
+
+
+
+  }
+
 
   return (
     <MDBContainer>
@@ -139,6 +150,10 @@ function App() {
         </MDBCol>
         <MDBCol size="4">
           <h5>Filter by status:</h5>
+          <MDBBtnGroup>
+            <MDBBtn color="success" onClick={()=>handleFilter("Active")}>Active</MDBBtn>
+            <MDBBtn color="danger" style={{marginLeft:"2px"}} onClick={()=>handleFilter("Inactive")}>Inactive</MDBBtn>
+          </MDBBtnGroup>
         </MDBCol>
 
       </MDBRow>
